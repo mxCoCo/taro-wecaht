@@ -1,0 +1,100 @@
+.registerInfo_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .infoForm {
+        width: 100%;
+        padding: 10PX 20PX;
+        box-sizing: border-box;
+        .form_item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16PX;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .label {
+                display: flex;
+                align-items: center;
+                width: 60PX;
+                text-align: left;
+                font-size: 18PX;
+                &.required {
+                    &::after {
+                        font-size: 18PX;
+                        color: #FF0000;
+                        display: inline-block;
+                        margin-left: 4PX;
+                        content: "*";
+                    }
+                }
+                label {
+                    font-size: 18PX;
+                }
+            }
+            input{
+                margin-left: 16PX;
+                font-size: 17PX;
+                height: 36PX;
+                &::placeholder {
+                    font-size: 16PX;
+                    color: rgba(0, 0, 0, 0.3);
+                }
+            }
+            .has_unit_input {
+                width: 100PX;
+                input{
+                    width: 100PX;
+                }
+            }
+            .unit {
+                margin-left: 8PX;
+                font-size: 16PX;
+            }
+        }
+
+
+
+        // .at-input {
+        //     margin-left: 16PX;
+        //     padding: 10PX 0;
+        //     .at-input__title {
+        //         &::before {
+        //             content: none;
+        //         }
+        //         display: flex;
+        //         align-items: center;
+        //         &.at-input__title--required {
+        //             &::after {
+        //                 font-size: 18PX;
+        //                 color: #FF0000;
+        //                 display: inline-block;
+        //                 margin-left: 4PX;
+        //                 content: "*";
+        //             }
+        //         }
+        //         width: 60PX;
+        //         font-size: 17PX;
+        //         text-align: left;
+        //     }
+        //     .at-input__input {
+        //         input{
+        //             font-size: 17PX;
+        //             height: 30PX;
+        //         }
+        //     }
+        // }
+        .submit_btn {
+            margin-top: 40PX;
+            width: 80PX;
+            height: 40PX;
+            line-height: 40PX;
+            border-radius: 10PX;
+            background: #267685;
+            font-weight: 600;
+            font-size: 16PX;
+            color: #FFFFFF;
+        }
+    }
+}

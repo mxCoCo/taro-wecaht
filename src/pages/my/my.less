@@ -1,0 +1,178 @@
+.my_page {
+    width: 100%;
+    height: 100%;
+    .main {
+        width: 100%;
+        height: 100%;
+        .top_wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #267685;
+            border-radius: 0PX 0PX 40PX 40PX;
+            .title {
+                // padding: 10PX 0;
+                position: relative;
+                width: 100%;
+                text-align: center;
+                .name {
+                    font-size: 16PX;
+                    color: #FFFFFF;    
+                }
+                .at-badge {
+                    position: absolute;
+                    top: 10PX;
+                    right: 20PX;
+                    .at-icon {
+                        font-size: 20PX;
+                    }
+                    .at-badge__num {
+                        top: -4PX;
+                        right: 0PX;
+                        padding: 0 3PX;
+                        font-size: 8PX;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .my_capture {
+                width: 77PX;
+                height: 77PX;
+                position: relative;
+                .capture {
+                    width: 77PX;
+                    height: 77PX;
+                    border-radius: 50%;
+                }
+                .auth_desc {
+                    position: absolute;
+                    bottom: 0;
+                    right: -50PX;
+                    display: flex;
+                    align-items: center;
+                    .pic {
+                        width: 15PX;
+                        height: 15PX;
+                    }
+                    .word {
+                        color: #FFFFFF;
+                        margin-left: 4PX;
+                        font-size: 10PX;
+                    }
+                }
+            }
+            .my_name {
+                margin: 16PX 0;
+                font-size: 20PX;
+                color: #FFFFFF;
+                font-weight: bold;
+            }
+            .my_sign {
+                width: 100%;
+                height: 17PX;
+                line-height: 17PX;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                box-sizing: border-box;
+                padding-left: 40PX;
+                padding-right: 40PX;
+                margin-bottom: 16PX;
+                .sign {
+                    font-size: 12PX;
+                    color: #D6E5E7;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .edit_pic {
+                    width: 15PX;
+                    height: 15PX;
+                }
+            }
+        }
+        .setting_wrap {
+            margin-top: 24PX;
+            margin-left: 12PX;
+            margin-right: 12PX;
+            padding: 30PX;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            .item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 16PX;
+                .left {
+                    display: flex;
+                    align-items: center;
+                    .icon {
+                        width: 15PX;
+                        height: 15PX;
+                    }
+                    .name {
+                        margin-left: 16PX;
+                        font-size: 15PX;
+                        &.noAuth {
+                            color: #808080;
+                        }
+                    }
+                }
+                .at-icon {
+                    font-size: 16PX !important;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .info_wrap {
+            margin-top: 30PX;
+            margin-left: 12PX;
+            margin-right: 12PX;
+            margin-bottom: 30PX;
+            padding: 20PX 30PX;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            .item {
+                font-size: 15PX;
+                margin-bottom: 16PX;
+                &:last-child {
+                    margin-bottom: 0;
+                    color: #267685;
+                }
+            }
+        }
+    }
+    .login {
+        width: 100%;
+        height: 100%;
+        .top_wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #267685;
+            border-radius: 0PX 0PX 40PX 40PX;
+            .title {
+                padding: 10PX 0;
+                position: relative;
+                width: 100%;
+                text-align: center;
+                .name {
+                    font-size: 16PX;
+                    color: #FFFFFF;    
+                }
+            }
+            .btn_login {
+                margin-top: 55PX;
+                margin-bottom: 86PX;
+                background: #555FD2;
+                border-radius: 10px;
+                font-weight: 600;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

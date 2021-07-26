@@ -1,0 +1,48 @@
+.myAvatar_page {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    .top {
+        display: flex;
+        justify-content: center;
+        .capture {
+            margin: 80PX auto;
+            width: 200PX;
+            height: 200PX;
+            border-radius: 50%;
+            border: 2px solid #ECECEC;
+            object-fit: contain;
+        }
+    }
+    .bottom {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        .main {
+            display: flex;
+            flex-direction: column;
+            .item {
+                height: 56PX;
+                line-height: 56PX;
+                font-size: 17PX;
+                text-align: center;
+                border-bottom: 1PX solid #F1F1F1;
+                &:last-child {
+                    border-bottom: 5PX solid #F1F1F1;
+                }
+            }
+        }
+        .foot {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 30PX;
+            .cancel {
+                height: 56PX;
+                line-height: 56PX;
+                font-size: 17PX;
+                text-align: center;
+            }
+        }
+    }
+    
+}
